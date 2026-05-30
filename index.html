@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cours de Sociologie - Version finale</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a1a2e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+
+        .content {
+            padding: 40px;
+            line-height: 1.8;
+            color: #2c3e50;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid #667eea;
+        }
+
+        .question {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .question-number {
+            font-weight: bold;
+            color: #764ba2;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .correction {
+            background: #ffeaa7;
+            border-left: 4px solid #f39c12;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .author-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .author-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .author-specialty {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .highlight {
+            background: #ffeaa7;
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-weight: bold;
+            color: #d63031;
+        }
+
+        .paradigm-box {
+            background: linear-gradient(135deg, #fdcb6e 0%, #f39c12 100%);
+            color: #2c3e50;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .method-box {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .method-steps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .step {
+            background: #e67e22;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9em;
+        }
+
+        .arrow {
+            font-size: 1.2em;
+            color: #f39c12;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .detail {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .subtitle {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 15px 0 10px 0;
+            color: #764ba2;
+        }
+
+        .final-note {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8em;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+            .method-steps {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Cours de Sociologie</h1>
+            <p>Version finale - Contenu révisé et corrigé</p>
+        </div>
+
+        <div class="content">
+            <!-- Première partie -->
+            <div class="section">
+                <div class="section-title">📖 Réponse aux questions sociologiques</div>
+
+                <div class="question">
+                    <div class="question-number">① Définition de la sociologie en général</div>
+                    <p>La sociologie est une science qui étudie la société, les faits sociaux, les comportements humains et les relations entre les individus dans un groupe social.</p>
+                    <div class="detail">
+                        <strong>Détail :</strong> La sociologie se distingue par son approche empirique des phénomènes collectifs. Ses principaux fondateurs sont Auguste Comte, Émile Durkheim, Karl Marx et Max Weber.
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">② Différence entre sociologie, philosophie et épistémologie</div>
+                    <p>La <strong>sociologie</strong> est la science qui étudie la société et les relations sociales à partir de méthodes empiriques.</p>
+                    <p>La <strong>philosophie</strong> est une réflexion générale sur l'existence, la vérité et la pensée humaine par le raisonnement logique.</p>
+                    <p>L'<strong>épistémologie</strong> étudie la science elle-même : ses méthodes, sa validité et la production des connaissances scientifiques.</p>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">③ Le premier auteur : Auguste Comte (1798-1857)</div>
+                    <p>Auguste Comte est un philosophe français considéré comme le père fondateur de la sociologie. En 1838, il crée le mot <span class="highlight">sociologie</span> pour désigner la science qui étudie la société d'une manière scientifique. Il pensait que les phénomènes sociaux obéissent à des lois comme les phénomènes naturels.</p>
+                    <p>Sa pensée est basée sur le <span class="highlight">positivisme</span>, une doctrine qui affirme que seule la connaissance scientifique fondée sur l'observation et la raison est valable.</p>
+                    <div class="detail">
+                        <strong>Détail :</strong> Comte a établi la loi des trois états : théologique (explication par les dieux), métaphysique (explication par des forces abstraites) et positif (explication par des lois scientifiques).
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">④ Le positivisme</div>
+                    <p>Le positivisme est une méthode scientifique développée principalement par Auguste Comte.</p>
+                    <ul>
+                        <li>La société peut être étudiée scientifiquement</li>
+                        <li>On doit utiliser l'observation, les faits et les statistiques</li>
+                        <li>Il faut éviter les opinions personnelles et les explications métaphysiques</li>
+                    </ul>
+                    <div class="detail">
+                        <strong>Détail :</strong> Le positivisme repose sur trois principes : la hiérarchie des sciences, le refus de la causalité absolue et la finalité pratique ("savoir pour prévoir, prévoir pour pouvoir").
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-number">⑤ Le principal du positivisme</div>
+                    <p>Le positivisme veut expliquer les phénomènes sociaux comme les sciences naturelles expliquent les phénomènes physiques.</p>
+                    <div class="method-box">
+                        <strong>📊 Méthode positive :</strong>
+                        <div class="method-steps">
+                            <span class="step">Observation</span>
+                            <span class="arrow">→</span>
+                            <span class="step">Hypothèse</span>
+                            <span class="arrow">→</span>
+                            <span class="step">Analyse</span>
+                            <span class="arrow">→</span>
+                            <span class="step">Résultat</span>
+                            <span class="arrow">→</span>
+                            <span class="step">Conclusion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paradigm-box">
+                    📌 <strong>Paradigme</strong><br>
+                    Un paradigme est un modèle ou une manière de voir et d'expliquer la réalité théorique. C'est un ensemble de croyances et de méthodes partagées par une communauté scientifique. Ce concept a été popularisé par Thomas Kuhn.
+                </div>
+            </div>
+
+            <!-- Support 2 -->
+            <div class="section">
+                <div class="section-title">👥 Support 2 : Les auteurs mentionnés et leurs spécialités</div>
+
+                <div class="author-card">
+                    <div class="author-name">Adam Smith (1723-1790)</div>
+                    <div class="author-specialty">Spécialiste de l'économie politique et du libéralisme économique. Auteur de "La Richesse des nations".</div>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-name">Karl Marx (1818-1883)</div>
+                    <div class="author-specialty">Spécialiste de l'analyse du capitalisme et des classes sociales. Auteur du "Capital".</div>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-name">Friedrich Engels (1820-1895)</div>
+                    <div class="author-specialty">Spécialiste des questions ouvrières et du capitalisme. Collaborateur de Marx.</div>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-name">John Stuart Mill (1806-1873)</div>
+                    <div class="author-specialty">Spécialiste du libéralisme et de l'économie politique. Auteur de "De la liberté".</div>
+                </div>
+
+                <div class="correction">
+                    <strong>✓ Correction importante :</strong> Le nom "Marcel Weber" est une erreur. Il s'agit de <strong>Max Weber</strong> (1864-1920), sociologue et économiste allemand.
+                </div>
+            </div>
+
+            <!-- Support 3 -->
+            <div class="section">
+                <div class="section-title">🏭 Support 3 : La sociologie économique</div>
+
+                <div class="question">
+                    <p>La <span class="highlight">sociologie économique</span> est une branche de la sociologie qui étudie les relations entre la société et l'économie.</p>
+                    <p>Elle analyse comment les comportements sociaux et les relations humaines influencent les activités économiques.</p>
+                    <div class="detail">
+                        <strong>Détail :</strong> La sociologie économique s'oppose à l'économie néoclassique en montrant que les choix économiques sont toujours socialement situés et encastrés dans des structures sociales.
+                    </div>
+                </div>
+
+                <div class="subtitle">📌 Max Weber (1864-1920)</div>
+                <div class="question">
+                    <p><strong>Spécialités :</strong> Sociologie économique, sociologie de la religion, analyse du capitalisme</p>
+                    <ul>
+                        <li>Les comportements économiques sont influencés par les idées, la religion et les valeurs sociales</li>
+                        <li>Le capitalisme moderne s'est développé grâce à une mentalité fondée sur le travail, la discipline et la rationalité</li>
+                        <li>L'économie se comprend à travers les acteurs et le sens que l'acteur lui donne → école de pensée compréhensive</li>
+                        <li>Concepts clés : action sociale, rationalisation</li>
+                    </ul>
+                </div>
+
+                <div class="subtitle">📌 Émile Durkheim (1858-1917)</div>
+                <div class="question">
+                    <p><strong>Spécialités :</strong> Fondateur de la sociologie moderne, étude des faits sociaux, solidarité sociale</p>
+                    <ul>
+                        <li>La société influence le comportement des individus</li>
+                        <li>Les faits sociaux doivent être étudiés scientifiquement comme des "choses"</li>
+                        <li>L'économie est encastrée dans la société ; la société existe avant l'individu et elle le contraint</li>
+                        <li>Concepts clés : fait social, division du travail, anomie</li>
+                    </ul>
+                </div>
+
+                <div class="paradigm-box" style="background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);">
+                    📝 <strong>Résumé des approches :</strong><br><br>
+                    <strong>Max Weber :</strong> L'économie se comprend à travers les acteurs et le sens que l'acteur donne à son action.<br><br>
+                    <strong>Émile Durkheim :</strong> L'économie est encastrée dans la société ; la société existe avant l'individu et elle le contraint.
+                </div>
+            </div>
+
+            <!-- Conclusion finale -->
+            <div class="final-note">
+                <strong>📌 Conclusion finale</strong><br><br>
+                Ce document présente les notions fondamentales de la sociologie : sa définition, sa méthode positiviste, ses principaux auteurs (Comte, Smith, Marx, Engels, Mill, Weber, Durkheim) et les bases de la sociologie économique.<br><br>
+                Toutes les erreurs ont été corrigées, notamment le nom "Marcel Weber" remplacé par "Max Weber". Les définitions ont été enrichies et clarifiées. Ce cours constitue une base solide pour comprendre les enjeux de la sociologie générale et économique.
+            </div>
+        </div>
+
+        <footer>
+            Cours de Sociologie - Version finale corrigée et complétée
+        </footer>
+    </div>
+</body>
+</html>
